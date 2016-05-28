@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndJ-qp-47F" customClass="BlackView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jaB-f7-VLi" customClass="RedView">
+                                        <rect key="frame" x="10" y="10" width="355" height="647"/>
+                                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PLW-vE-ncc" customClass="GreenView">
+                                        <rect key="frame" x="40" y="40" width="295" height="587"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="whiteView" destination="WhV-TW-Yr3" id="n6C-Qg-yk1"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbc-Mj-QLG" customClass="YellowView">
+                                        <rect key="frame" x="0.0" y="194" width="375" height="280"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WhV-TW-Yr3" customClass="WhiteView">
+                                                <rect key="frame" x="50" y="-20" width="275" height="320"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <outlet property="yellowView" destination="hbc-Mj-QLG" id="JU6-vt-MlW"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="WhV-TW-Yr3" firstAttribute="top" secondItem="hbc-Mj-QLG" secondAttribute="top" constant="-20" id="9hJ-o8-ngv"/>
+                                            <constraint firstItem="WhV-TW-Yr3" firstAttribute="leading" secondItem="hbc-Mj-QLG" secondAttribute="leading" constant="50" id="Lg7-G0-baS"/>
+                                            <constraint firstAttribute="bottom" secondItem="WhV-TW-Yr3" secondAttribute="bottom" constant="-20" id="Wvh-KU-tWI"/>
+                                            <constraint firstAttribute="trailing" secondItem="WhV-TW-Yr3" secondAttribute="trailing" constant="50" id="nsl-pu-CLv"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="hbc-Mj-QLG" firstAttribute="top" secondItem="ndJ-qp-47F" secondAttribute="top" constant="194" id="8yd-wo-uKl"/>
+                                    <constraint firstItem="PLW-vE-ncc" firstAttribute="leading" secondItem="ndJ-qp-47F" secondAttribute="leading" constant="40" id="B2G-Si-H4g"/>
+                                    <constraint firstAttribute="bottom" secondItem="hbc-Mj-QLG" secondAttribute="bottom" constant="193" id="Fbk-Py-ZiH"/>
+                                    <constraint firstAttribute="trailing" secondItem="hbc-Mj-QLG" secondAttribute="trailing" id="GmZ-Aw-U1H"/>
+                                    <constraint firstItem="PLW-vE-ncc" firstAttribute="top" secondItem="ndJ-qp-47F" secondAttribute="top" constant="40" id="Pac-vs-Mxf"/>
+                                    <constraint firstAttribute="trailing" secondItem="jaB-f7-VLi" secondAttribute="trailing" constant="10" id="TOR-Of-Bi3"/>
+                                    <constraint firstAttribute="trailing" secondItem="PLW-vE-ncc" secondAttribute="trailing" constant="40" id="Tjq-KJ-Xbc"/>
+                                    <constraint firstAttribute="bottom" secondItem="PLW-vE-ncc" secondAttribute="bottom" constant="40" id="kQ7-nb-3CE"/>
+                                    <constraint firstAttribute="bottom" secondItem="jaB-f7-VLi" secondAttribute="bottom" constant="10" id="kvY-Xp-a7W"/>
+                                    <constraint firstItem="hbc-Mj-QLG" firstAttribute="leading" secondItem="ndJ-qp-47F" secondAttribute="leading" id="rWt-LC-WTd"/>
+                                    <constraint firstItem="jaB-f7-VLi" firstAttribute="leading" secondItem="ndJ-qp-47F" secondAttribute="leading" constant="10" id="uYg-tk-LZ9"/>
+                                    <constraint firstItem="jaB-f7-VLi" firstAttribute="top" secondItem="ndJ-qp-47F" secondAttribute="top" constant="10" id="vPK-xv-P1b"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ndJ-qp-47F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Icu-5O-Npw"/>
+                            <constraint firstItem="ndJ-qp-47F" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eke-Jn-kR3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ndJ-qp-47F" secondAttribute="bottom" id="gvS-n8-4oa"/>
+                            <constraint firstAttribute="trailing" secondItem="ndJ-qp-47F" secondAttribute="trailing" id="mLR-AX-Dn1"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1275.5" y="389.5"/>
+        </scene>
+    </scenes>
+</document>
