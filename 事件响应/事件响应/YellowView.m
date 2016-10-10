@@ -7,11 +7,19 @@
 //
 
 #import "YellowView.h"
+#import "UIView+WDKit.h"
 
 @implementation YellowView
 
 //- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
 //    return YES;
 //}
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    [self handleTapGestureWithBlock:^{
+        NSLog(@"黄色视图被点击");
+    }];
+}
 
 @end

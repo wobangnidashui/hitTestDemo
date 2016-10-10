@@ -7,14 +7,23 @@
 //
 
 #import "WhiteView.h"
+#import "UIView+WDKit.h"
 
 @interface WhiteView()
 
 @property (nonatomic, weak) IBOutlet UIView *yellowView;
+@property (nonatomic, weak) IBOutlet UIView *greenView;
 
 @end
 
 @implementation WhiteView
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    [self handleTapGestureWithBlock:^{
+        NSLog(@"白色视图被点击");
+    }];
+}
 
 //- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
 //    NSLog(@"hitTest----%@", [self class]);
@@ -25,6 +34,13 @@
 //    
 //    return [super hitTest:point withEvent:event];
 //}
+//或
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    CGPoint hitPoint = [_greenView convertPoint:point fromView:self];
+    if ([_greenView pointInside:hitPoint withEvent:event])
+        return _greenView;
+    return [super hitTest:point withEvent:event];
+}
 
 
 //- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
@@ -33,6 +49,8 @@
 //    
 //    return [super pointInside:point withEvent:event];
 //}
+
+
 
 
 @end
