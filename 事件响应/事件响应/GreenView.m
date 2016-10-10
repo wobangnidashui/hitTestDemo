@@ -7,12 +7,20 @@
 //
 
 #import "GreenView.h"
+#import "UIView+WDKit.h"
 
 @interface GreenView()
 @property (nonatomic, weak) IBOutlet UIView *whiteView;
 @end
 
 @implementation GreenView
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    [self handleTapGestureWithBlock:^{
+        NSLog(@"绿色视图被点击");
+    }];
+}
 
 //- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
 //    NSLog(@"hitTest----%@", [self class]);

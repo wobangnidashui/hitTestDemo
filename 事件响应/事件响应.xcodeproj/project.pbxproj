@@ -21,6 +21,7 @@
 		0218AE891CF7A5E800A9A41D /* RedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0218AE881CF7A5E800A9A41D /* RedView.m */; };
 		0218AE8C1CF7A6A400A9A41D /* WhiteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0218AE8B1CF7A6A400A9A41D /* WhiteView.m */; };
 		0218AE8F1CF7A6BB00A9A41D /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0218AE8E1CF7A6BB00A9A41D /* BaseView.m */; };
+		A87470421DAB44300090E9AE /* UIView+WDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A87470411DAB44300090E9AE /* UIView+WDKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		0218AE8B1CF7A6A400A9A41D /* WhiteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteView.m; sourceTree = "<group>"; };
 		0218AE8D1CF7A6BB00A9A41D /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		0218AE8E1CF7A6BB00A9A41D /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		A87470401DAB44300090E9AE /* UIView+WDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WDKit.h"; sourceTree = "<group>"; };
+		A87470411DAB44300090E9AE /* UIView+WDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WDKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 		0218AE4A1CF7998900A9A41D /* 事件响应 */ = {
 			isa = PBXGroup;
 			children = (
+				A87470401DAB44300090E9AE /* UIView+WDKit.h */,
+				A87470411DAB44300090E9AE /* UIView+WDKit.m */,
 				0218AE541CF7998900A9A41D /* Main.storyboard */,
 				0218AE511CF7998900A9A41D /* ViewController.h */,
 				0218AE521CF7998900A9A41D /* ViewController.m */,
@@ -308,6 +313,7 @@
 				0218AE831CF79A3100A9A41D /* GreenView.m in Sources */,
 				0218AE801CF79A2100A9A41D /* YellowView.m in Sources */,
 				0218AE4D1CF7998900A9A41D /* main.m in Sources */,
+				A87470421DAB44300090E9AE /* UIView+WDKit.m in Sources */,
 				0218AE891CF7A5E800A9A41D /* RedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
