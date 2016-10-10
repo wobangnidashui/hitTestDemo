@@ -3,7 +3,7 @@
 //  IOS-Weidai
 //
 //  Created by cuihh on 16/6/3.
-//  Copyright © 2016年 微贷（杭州）金融信息服务有限公司. All rights reserved.
+//  Copyright © . All rights reserved.
 //
 
 #import "UIView+WDKit.h"
@@ -19,7 +19,6 @@
 
 static char blockKey;
 
-///> 添加一个点击事件
 -(void)handleTapGestureWithBlock:(gestureTapBlock)block{
     self.gestureBlock = block;
     self.userInteractionEnabled = YES;
